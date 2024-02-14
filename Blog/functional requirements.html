@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./utils/index.css">
+    <link rel="stylesheet" href="./utils/blog.css">
+    <script src="./components/header.js" type="text/javascript" defer></script>
+    <script src="./components/footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <!-- background images -->
+    <img class="bg" src="./images/background/background overlay.svg">
+
+
+    <div class="main-con">
+
+        <div class="requirement-examples">
+            <h1>
+                <center>Example</center>
+            </h1>
+            <div class="button-con">
+                <button type="button" class="btn btn-primary" onclick="ShowNotes()">Notes</button>
+                <button type="button" class="btn btn-primary" onclick="ShowExample()">Example</button>
+            </div>
+            <div class="center">
+                <!-- notes -->
+                <div class="requirements-notes">
+                    <iframe
+                        src="https://farehamcollege-my.sharepoint.com/personal/osharp248_fareham_ac_uk/_layouts/15/Doc.aspx?sourcedoc={aaa10cd1-7545-4927-8e38-59f81faaaeff}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+                        class="powerpoint" frameborder="0">This is an embedded <a target="_blank"
+                            href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                            href="https://office.com/webapps">Office</a>.
+                    </iframe>
+                </div>
+
+                <!-- example -->
+                <div class="requirements-example">
+                    <iframe
+                        src="https://farehamcollege-my.sharepoint.com/personal/osharp248_fareham_ac_uk/_layouts/15/Doc.aspx?sourcedoc={824646c2-4d3d-400f-8fd8-6be8dfb221e1}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+                        class="powerpoint" frameborder="0">This is an embedded <a target="_blank"
+                            href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                            href="https://office.com/webapps">Office</a>.
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="blog-con">
+            <h1 class="latest-blogs"><b>Latest Blogs</b></h1>
+            <div class="blog">
+                <div class="blog-header">
+                    <div class="blog-title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="blog-date">
+                        date
+                    </div>
+                </div>
+                
+                <div class="blog-cate-con">
+                    <div class="blog-page">
+                        <p>main-page - cate</p>
+                    </div>
+                </div>
+                <div class="blog-desc">
+                    <p>desc</p>
+                </div>
+            </div>
+        </div>
+
+        <footer-component></footer-component>
+    </div>
+
+
+
+
+
+    <script src="./data.js"></script>
+    <script src="./utils/index.js"></script>
+    <script src="./utils/blogs.js"></script>
+    <script src="./utils/requirements.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

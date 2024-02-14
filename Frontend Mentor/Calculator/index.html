@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
+  
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="calculator">
+        <div class="header">
+          <p>calc</p>
+          <div class="theme">
+            <p>Theme</p>
+            <div class="theme-switch-bg" id="theme-switch-bg">
+              <button class="theme-switch" onclick="themeSwitch()"></button>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="screen">
+          <h1 id="screen">screen</h1>
+        </div>
+
+        <div class="keypad">
+          <div class="row">
+            <button class="key" onclick="keyPress('7')">7</button>
+            <button class="key" onclick="keyPress('8')">8</button>
+            <button class="key" onclick="keyPress('9')">9</button>
+            <button class="key remove" id="remove-btn" onclick="remove()">DEL</button>
+          </div>
+
+          <div class="row">
+            <button class="key" onclick="keyPress('4')">4</button>
+            <button class="key" onclick="keyPress('5')">5</button>
+            <button class="key" onclick="keyPress('6')">6</button>
+            <button class="key" onclick="keyPress('+')">+</button>
+          </div>
+
+          <div class="row">
+            <button class="key" onclick="keyPress('1')">1</button>
+            <button class="key" onclick="keyPress('2')">2</button>
+            <button class="key" onclick="keyPress('3')">3</button>
+            <button class="key" onclick="keyPress('-')">-</button>
+          </div>
+
+          <div class="row">
+            <button class="key" onclick="keyPress('.')">.</button>
+            <button class="key" onclick="keyPress('0')">0</button>
+            <button class="key" onclick="keyPress('/')">/</button>
+            <button class="key" onclick="keyPress('x')">x</button>
+          </div>
+
+          <div class="row">
+            <button class="key remove" id="reset-btn" onclick="reset()">RESET</button>
+            <button class="key submit" id="submit-btn" onclick="calc()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="index.js"></script>
+  </body>
+</html>

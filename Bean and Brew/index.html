@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bean&Brew Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./main.css" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" style="width:150px"><img src="./images/logo.png" style="width:100%; height:100%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="locations.html">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about us.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar -->
+
+        <!-- content -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/cover1.jpg" class="d-block w-100" alt="store image" style="height:auto;width:85%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/cover2.jpg" class="d-block w-100" alt="store image" style="height:auto;width:85%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/cover3.jpg" class="d-block w-100" alt="store image" style="height:auto;width:85%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex p-3 justify-content-around flex-wrap">
+            <div class="card text-bg-dark p-1" style="width: 18rem;">
+                <img src="./images/event.jpg" class="card-img-top" alt="event image">
+                <div class="card-body">
+                    <h5 class="card-title">Events</h5>
+                    <p class="card-text">Some text to say events are good</p>
+                    <a href="events.html" class="btn btn-light">See more</a>
+                </div>
+            </div>            
+            <div class="card text-bg-dark p-1" style="width: 18rem;">
+                <img src="./images/other location.jpg" class="card-img-top" alt="event image">
+                <div class="card-body">
+                    <h5 class="card-title">Locations</h5>
+                    <p class="card-text">Some text about other locations</p>
+                    <a href="locations.html" class="btn btn-light">See more</a>
+                </div>
+            </div>
+            <div class="card text-bg-dark p-1" style="width: 18rem;">
+                <img src="./images/coffee.jpeg" class="card-img-top" alt="event image">
+                <div class="card-body">
+                    <h5 class="card-title">Products</h5>
+                    <p class="card-text">Some text to say procuts are good</p>
+                    <a href="products.html" class="btn btn-light">See more</a>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+
+        <!-- footer -->
+        <footer class="text-center text-lg-start mt-auto" style="background-color: #171717">
+            <!--
+            <div class="container d-flex justify-content-center py-3">
+                <a class="btn btn-darker" href="https://www.facebook.com/beanandbrewlondon" role="button">
+                    <i class="bi bi-facebook" style="font-size: larger"></i>
+                </a>
+                <a class="btn btn-darker" href="https://www.instagram.com/beanandbrewlondon/" role="button">
+                    <i class="bi bi-instagram" style="font-size: larger"></i>
+                </a>
+            </div>
+            -->
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://www.beanandbrewlondon.com/">beanandbrewlondon.com</a>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+</html>

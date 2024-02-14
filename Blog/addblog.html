@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Add a blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./utils/index.css">
+    <script src="./components/header.js" type="text/javascript" defer></script>
+    <script src="./components/footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <!-- background images -->
+    <img class="bg" src="./images/background/background overlay.svg">
+
+
+    <div class="main-con" style="margin: 40px">
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Title</span>
+            <input type="text" class="form-control title" placeholder="Title" aria-label="Title"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Page</span>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle pageDrop" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Select a Page
+                </a>
+
+                <ul class="dropdown-menu pageMenu">
+                    <li><a class="dropdown-item pageDropItem">Select a Page</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Category</span>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle cateDrop" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Select a Category
+                </a>
+
+                <ul class="dropdown-menu cateMenu">
+                    <li><a class="dropdown-item cateDropItem">Select a Category</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Text</span>
+            <input type="text" class="form-control text" placeholder="Text" aria-label="Text"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="AddBlog()">Submit</button>
+
+        <button type="button" class="btn btn-primary" onclick="AddBlog()" style="background-color: grey; border-color: grey">Confirm</button>
+
+    </div>
+
+    <footer-component></footer-component>
+
+
+
+    <script src="./utils/index.js"></script>
+    <script src="./data.js"></script>
+    <script src="./utils/add blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

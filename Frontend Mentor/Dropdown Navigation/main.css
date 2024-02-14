@@ -1,0 +1,152 @@
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+}
+
+.dropdown-menu{
+    border-style: none;
+}
+
+.nav-hover{
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+
+.nav-hover:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+.content{
+    width: 50%;
+    margin-top: 15rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.big-text{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.smaller-text{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.btn{
+    font-size: larger;
+    height: 4rem;
+    width: 10rem;
+}
+
+.learn-btn{
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    border-style: solid;
+    border-color: hsl(0, 0%, 98%);
+}
+
+.learn-btn:hover{
+    border-style: solid;
+    border-color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.image-con{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.image{
+    height: 75%;
+    width: auto;
+}
+
+.side-image-container{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    width: 50%;
+}
+
+.side-image{
+    width: 100%;
+    height: auto;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.large-screen{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-screen{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .small-screen{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .large-screen{
+        display: none;
+    }
+
+    .side-image-container{
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .side-image{
+        width: 100%;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    
+    .big-text{
+        font-size: 60px;
+    }
+
+    .smaller-text{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .image-con{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 4rem;
+    }
+}

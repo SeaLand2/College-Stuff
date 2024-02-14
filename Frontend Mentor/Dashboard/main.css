@@ -1,0 +1,151 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    color: #FBFDFF;
+    font-family: 'Rubik', serif;
+}
+
+.container-custom-all{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+.card{
+    background-color: hsl(235, 46%, 20%);
+    width: 18rem;
+    height: auto;
+    border-style: none;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.container-body-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.card-body{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+}
+
+.card-img-top{
+    height: 3rem;
+    width: auto;
+}
+
+.card-jeremy{
+    background-color: hsl(235, 46%, 20%);
+    width: auto;
+    height: 30.5rem;
+    border-style: none;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.card-body-jeremy{
+    border-color: hsl(235, 46%, 20%); 
+    padding-left: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.Jeremy{
+    border-radius: 20px;
+    background-color:
+    hsl(246, 80%, 60%);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body:hover{
+    background:hsl(235, 45%, 61%);
+}
+
+.nav-link{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #6E72AE;
+    font-size: large;
+}
+
+.nav-link:disabled{
+    color: #FBFDFF;
+}
+
+.activity-header{
+    display: flex;
+    justify-content: end;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.row{
+    padding: 2rem;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    height: 32.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.user{
+    width: 40%;
+    height: auto;
+    border-style: solid;
+    border-color: #FBFDFF;
+    border-radius: 100%;
+    margin: 10%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

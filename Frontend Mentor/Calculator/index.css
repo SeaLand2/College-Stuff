@@ -1,0 +1,165 @@
+:root {
+    /* changing colours (defaults to dark theme) */
+    --background: hsl(222, 26%, 31%);
+    --text-top: hsl(0, 0%, 100%);
+    --text-key: hsl(221, 14%, 31%);
+    --text-remove: hsl(0, 0%, 100%);
+    --text-submit: hsl(0, 0%, 100%);
+    --content-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+    --keys: hsl(30, 25%, 89%);
+    --keys-shadow: hsl(28, 16%, 65%);
+    --keys-toggle: hsl(0, 0%, 100%);
+    --submit: hsl(6, 63%, 50%);
+    --submit-shadow: hsl(6, 70%, 34%);
+    --submit-toggle: hsl(6, 93%, 67%);
+    --remove: hsl(225, 21%, 49%);
+    --remove-shadow: hsl(224, 28%, 35%);
+    --remove-toggle: hsl(229, 100%, 82%);
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    line-height: 0px;
+}
+
+button {
+    border-style: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    color: var(--text-top);
+}
+
+.main {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    flex-direction: column;
+    width: 35%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    color: var(--text-top);
+}
+
+.theme {
+    display: flex;
+    align-content: center;
+    font-size: small;
+}
+
+.theme-switch-bg {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: var(--content-background);
+    border-radius: 75px 75px;
+    height: 25px;
+    width: 65px;
+    margin-left: 10px;
+}
+
+.theme-switch {
+    background-color: var(--submit);
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+    margin: 3px;
+}
+
+.theme-switch:hover {
+    background-color: var(--submit-toggle);
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 13vh;
+    background-color: var(--screen-background);
+    border-radius: 1rem;
+    padding-right: 20px;
+    overflow: scroll;
+    color: var(--text-top);
+}
+
+.keypad {
+    background-color: var(--content-background);
+    border-radius: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--keys);
+    color: var(--text-key);
+    border-radius: 10px;
+    margin: 2.5%;
+    width: 50%;
+    height: 5vh;
+    box-shadow: 0 4px 0 0 var(--keys-shadow);
+}
+
+.key:hover {
+    background-color: var(--keys-toggle);
+}
+
+.remove {
+    background-color: var(--remove);
+    color: var(--text-remove);
+    box-shadow: 0 4px 0 0 var(--remove-shadow);
+}
+
+.remove:hover {
+    background-color: var(--remove-toggle);
+}
+
+.submit {
+    background-color: var(--submit);
+    color: var(--text-submit);
+    box-shadow: 0 4px 0 0 var(--submit-shadow);
+}
+
+.submit:hover {
+    background-color: var(--submit-toggle);
+}
+
+@media (max-width: 900px) {
+    .main {
+        width: 50%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        width: 75%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 450px) {
+    .main {
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        
+    }
+}

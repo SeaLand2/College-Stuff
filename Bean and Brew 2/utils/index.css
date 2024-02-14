@@ -1,0 +1,19 @@
+:root {
+    --bg-color: #202124;
+    --nav-color: #171717;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.navbar {
+    background-color: var(--nav-color);
+}
+
+.theme-image {
+    /*background-color: white;
+    mask-image: url(../images/theme/theme-dark.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;*/
+}
